@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <title>Julekalender</title>
+</head>
+<body>
+    <h1 class="title">Dina's Julekalender!</h1>
+
+
+<div class="frame-wrapper">
+    <div class="frame">
+        <div id="puzzle-grid">
+            <div class="puzzle-piece" id="p1"></div>
+            <div class="puzzle-piece" id="p2"></div>
+            <div class="puzzle-piece" id="p3"></div>
+            <div class="puzzle-piece" id="p4"></div>
+            <div class="puzzle-piece" id="p5"></div>
+            <div class="puzzle-piece" id="p6"></div>
+            <div class="puzzle-piece" id="p7"></div>
+            <div class="puzzle-piece" id="p8"></div>
+            <div class="puzzle-piece" id="p9"></div>
+        </div>
+    </div>
+</div>
+
+    <div class="calendar-grid">
+        <!-- 24 kalenderbokser -->
+        <div class="calendar-box">1</div>
+        <div class="calendar-box">2</div>
+        <div class="calendar-box">3</div>
+        <div class="calendar-box">4</div>
+        <div class="calendar-box">5</div>
+        <div class="calendar-box">6</div>
+        <div class="calendar-box">7</div>
+        <div class="calendar-box">8</div>
+        <div class="calendar-box">9</div>
+        <div class="calendar-box">10</div>
+        <div class="calendar-box">11</div>
+        <div class="calendar-box">12</div>
+        <div class="calendar-box">13</div>
+        <div class="calendar-box">14</div>
+        <div class="calendar-box">15</div>
+        <div class="calendar-box">16</div>
+        <div class="calendar-box">17</div>
+        <div class="calendar-box">18</div>
+        <div class="calendar-box">19</div>
+        <div class="calendar-box">20</div>
+        <div class="calendar-box">21</div>
+        <div class="calendar-box">22</div>
+        <div class="calendar-box">23</div>
+        <div class="calendar-box">24</div>
+    </div>
+
+<div class="hello-kitty-space">
+  <div class="kitty-track" id="kittyCollection">
+    <!-- 10 plasser -->
+    <div class="kitty-slot"></div>
+    <div class="kitty-slot"></div>
+    <div class="kitty-slot"></div>
+    <div class="milestone"></div>
+    <div class="kitty-slot"></div>
+    <div class="kitty-slot"></div>
+    <div class="kitty-slot"></div>
+    <div class="milestone"></div>
+    <div class="kitty-slot"></div>
+    <div class="kitty-slot"></div>
+    <div class="kitty-slot"></div>
+    <div class="milestone"></div>
+  </div>
+</div>
+
+<!-- Overlay + popup -->
+<div id="overlay" class="overlay" onclick="closePopup()">
+    <div class="popup-content" onclick="event.stopPropagation()">
+
+        <span class="close-button" onclick="closePopup()">&times;</span>
+
+        <!-- Spørsmål -->
+        <p id="question"></p>
+
+        <!-- Svaralternativer (vises kun når nødvendig) -->
+        <div id="optionsSection" class="options-section" style="display:none;"></div>
+
+        <!-- Tilbakemelding -->
+        <p id="result"></p>
+
+        <!-- Innhold etter riktig svar -->
+        <div id="content"></div>
+
+    </div>
+</div>
+
+<div id="reward-overlay" class="reward-overlay">
+
+    <button id="rewardClose" class="reward-close">&times;</button>
+
+    <div class="reward-modal">
+
+        <div class="gift-wrapper">
+            <img id="giftClosed" class="gift-box" src="../Bilder/icon.png">
+            <img id="giftOpen" class="gift-lid" src="../Bilder/icon_open.png">
+        </div>
+
+        <h2 class="reward-title">Du har samlet 3 Hello Kittys!</h2>
+        <p class="reward-sub">Her er premien din…</p>
+
+        <img src="../Bilder/hello_kitty.png" class="reward-image">
+
+    </div>
+
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+[
+  {
+        "day": 1,
+        "question": "",
+        "answer": "",
+        "content": {
+            "title": "1. Desember",
+            "text": "Kjære Dina, velkommen til din julekalender! Jeg håper du vil like den jeg har laget for deg. Hver dag frem til julaften vil du få åpne en luke med ulikt innhold som jeg har laget spesielt for deg. Lykke til, og god jul!",
+            "image": ""
+        },
+        "rewardKitty": false,
+        "rewardPuzzle": null,
+        "rewardPopup": {
+            "title": "Hello Kitty premie!",
+            "subtitle": "I dag får du en Pumpkin Spice Latte på Espresso House til å holde varmen❤️",
+            "image": "../Bilder/latte.png",
+            "giftBox": {
+                "closed": "../Bilder/icon.png",
+                "open": "../Bilder/icon_open.png"
+        }
+    }
+  },
+  {
+        "day": 2,
+        "question": "Hva het den første sangen du viste meg?",
+        "options": ["Baby", "Aquamarine", "Yukon"],
+        "correct_option": "Aquamarine",
+        "content": {
+            "title": "2. Desember",
+            "text": "Aquamarine av Addison Rae i bilen på vei til Kongsberg",
+            "image": "../Bilder/Luke1.jpeg"
+        },
+        "rewardKitty": true,
+        "rewardPuzzle": null
+  },
+  {
+        "day": 3,
+        "content": {
+            "title": "3. Desember",
+            "text": "Din første brikke i puslespillet!",
+            "image": "../Bilder/puzzle_piece_1.jpeg"
+        },
+        "rewardKitty": false,
+        "rewardPuzzle": "p1"
+  },
+  {
+        "day": 4,
+        "content": {
+            "title": "4. Desember",
+            "text": "Du er utrolig flink og jeg er stolt av deg!",
+            "image": ""
+        },
+        "rewardKitty": false,
+        "rewardPuzzle": null
+  },
+  {
+        "day": 5,
+        "content": {
+            "title": "5. Desember",
+            "text": "Her får du en brikke til, håper du får en fin dag!❤️",
+            "image": "../Bilder/puzzle_piece_7.jpeg"
+        },
+        "rewardKitty": false,
+        "rewardPuzzle": "p7"
+  },
+  {
+        "day": 6,
+        "question": "Hva er det første måltidet vi spiste sammen?",
+        "options": ["Hooter's", "Mc Donald's", "Panda Express"],
+        "correct_option": "Panda Express",
+        "content": {
+            "title": "6. Desember",
+            "text": "Panda Express etter en seig dag i Frozen",
+            "image": "../Bilder/Panda-Express.png"
+        },
+        "rewardKitty": true,
+        "rewardPuzzle": null
+    },
+  {
+        "day": 7,
+        "content": {
+            "title": "7. Desember",
+            "text": "Din første brikke i puslespillet!",
+            "image": "../Bilder/puzzle_piece_3.jpeg"
+        },
+        "rewardKitty": false,
+        "rewardPuzzle": "p3"
+  },
+  {
+        "day": 8,
+        "question": "Hva er favorittølen min i USA?",
+        "options": ["Modelo", "Budweiser", "Miller Lite"],
+        "correct_option": "Budweiser",
+        "content": {
+            "title": "8. Desember",
+            "text": "Budweiser - helst på nach med deg!",
+            "image": "../Bilder/budweiser.jpeg"
+        },
+        "rewardKitty": true,
+        "rewardPuzzle": null,
+        "rewardPopup": {
+            "title": "Du har samlet dine første Hello Kittys!",
+            "subtitle": "Premien i dag er en flaske vin som står klar til deg på vinmonopolet! Det er en Amerikaner, og jeg tenkte at siden du ikke kan være her med meg i USA, så kan du i det minste få smaken av det❤️",
+            "image": "../Bilder/vin.png",
+            "giftBox": {
+                "closed": "../Bilder/icon.png",
+                "open": "../Bilder/icon_open.png"
+        }
+    }
+  },
+  {
+    "day": 9,
+    "content": {
+      "title": "Du er best",
+      "text": "Takk for at du gjør livet mitt bedre.",
+      "image": "/images/day9.jpg"
+    },
+    "rewardKitty": true,
+    "rewardPuzzle": null
+  },
+  {
+    "day": 10,
+    "content": {
+      "title": "En koselig beskjed",
+      "text": "Du fortjener alt det beste!",
+      "image": "/images/day10.jpg"
+    },
+    "rewardKitty": false,
+    "rewardPuzzle": "p5"
+  },
+  {
+    "day": 11,
+    "question": "Spørsmål!!!!",
+    "answer": "31",
+    "content": {
+      "title": "Flott!",
+      "text": "Du har full kontroll på kalenderen.",
+      "image": "/images/day11.jpg"
+    },
+    "rewardKitty": true,
+    "rewardPuzzle": null
+  },
+  {
+    "day": 12,
+    "content": {
+      "title": "Halvveis til jul!",
+      "text": "Nå begynner virkelig stemningen.",
+      "image": "/images/day12.jpg"
+    },
+    "rewardKitty": false,
+    "rewardPuzzle": "p6"
+  },
+  {
+    "day": 13,
+    "content": {
+      "title": "Luciadagen",
+      "text": "Håper du får lussekatter i dag!",
+      "image": "/images/day13.jpg"
+    },
+    "rewardKitty": true,
+    "rewardPuzzle": null
+  },
+  {
+    "day": 14,
+    "question": "Spørsmål!!!!",
+    "answer": "nissen",
+    "content": {
+      "title": "Riktig!",
+      "text": "Julenissen følger med!",
+      "image": "/images/day14.jpg"
+    },
+    "rewardKitty": false,
+    "rewardPuzzle": null
+  },
+  {
+    "day": 15,
+    "content": {
+      "title": "Bare deg",
+      "text": "Du gjør hver dag litt bedre.",
+      "image": "/images/day15.jpg"
+    },
+    "rewardKitty": true,
+    "rewardPuzzle": null
+  },
+  {
+    "day": 16,
+    "question": "Spørsmål!!!!",
+    "answer": "nissen",
+    "content": {
+      "title": "Koselig luke",
+      "text": "Ta deg en kopp kakao i dag!",
+      "image": "/images/day16.jpg"
+    },
+    "rewardKitty": false,
+    "rewardPuzzle": null
+  },
+  {
+    "day": 17,
+    "content": {
+      "title": "Nydelig sunget!",
+      "text": "Julestemning på topp!",
+      "image": "/images/day17.jpeg"
+    },
+    "rewardKitty": true,
+    "rewardPuzzle": null
+  },
+  {
+    "day": 18,
+    "question": "Spørsmål!!!!",
+    "answer": "home alone",
+    "content": {
+      "title": "Nærmer seg!",
+      "text": "Bare noen dager igjen til jul!",
+      "image": "/images/day18.jpg"
+    },
+    "rewardKitty": false,
+    "rewardPuzzle": "p9"
+  },
+  {
+    "day": 19,
+    "content": {
+      "title": "Juleglede",
+      "text": "Håper du får en rolig og god dag.",
+      "image": "/images/day19.jpg"
+    },
+    "rewardKitty": true,
+    "rewardPuzzle": null
+  },
+  {
+    "day": 20,
+    "content": {
+      "title": "Bare litt kos",
+      "text": "Tenk at vi snart er ved slutten av kalenderen!",
+      "image": "/images/day20.jpg"
+    },
+    "rewardKitty": false,
+    "rewardPuzzle": null
+  },
+  {
+    "day": 21,
+    "question": "Spørsmål!!!!",
+    "answer": "home alone",
+    "content": {
+      "title": "Du er fantastisk",
+      "text": "Takk for at du er du.",
+      "image": "/images/day21.jpg"
+    },
+    "rewardKitty": true,
+    "rewardPuzzle": null
+  },
+  {
+    "day": 22,
+    "content": {
+      "title": "Riktig!",
+      "text": "En skikkelig juleklassiker.",
+      "image": "/images/day22.jpg"
+    },
+    "rewardKitty": false,
+    "rewardPuzzle": null
+  },
+  {
+    "day": 23,
+    "question": "Spørsmål!!!!",
+    "answer": "home alone",
+    "content": {
+      "title": "Snart jul!",
+      "text": "Bare én dag igjen til julaften!",
+      "image": "/images/day23.jpg"
+    },
+    "rewardKitty": true,
+    "rewardPuzzle": null
+  },
+  {
+    "day": 24,
+    "content": {
+      "title": "God jul!",
+      "text": "Takk for at du har vært med hele veien.",
+      "image": "/images/day24.jpg"
+    },
+    "rewardKitty": true,
+    "rewardPuzzle": null
+  }
+]

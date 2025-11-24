@@ -1,0 +1,492 @@
+body {
+    background-image: url('../Bilder/bakgrunn.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+/* Responsive adjustments for iPhone and iPad, portrait and landscape */
+@media (max-width: 900px) {
+    .calendar-grid {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 95vw;
+        padding: 10px;
+        grid-gap: 10px;
+    }
+    .calendar-box {
+        width: 70px;
+        height: 70px;
+        font-size: 22px;
+        padding-top: 10px;
+    }
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .calendar-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 98vw;
+        padding: 5px;
+        grid-gap: 6px;
+    }
+    .calendar-box {
+        width: 48vw;
+        height: 48vw;
+        max-width: 120px;
+        max-height: 120px;
+        font-size: 18px;
+        padding-top: 6px;
+    }
+    h1 {
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+}
+
+.title {
+    text-align: center;
+    color: #8b4513;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #d4a373, #b8860b, #d4a373);
+    border-radius: 2px;
+
+    animation: goldLine 2.5s ease forwards;
+}
+
+@keyframes goldLine {
+    from { width: 0; opacity: 0; }
+    to { width: 25%; opacity: 1; }
+}
+
+.lux-type {
+  display: inline-block;
+}
+
+.lux-type span {
+  opacity: 0;
+  animation: fadeLetter 0.5s forwards;
+}
+
+@keyframes fadeLetter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.calendar-box {
+    background-image: url('../Bilder/icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Prata", serif;
+    font-size: 28px;   /* juster etter størrelse */
+    font-weight: 600;
+    color: navy;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.calendar-box.opened {
+    background-image: url("../Bilder/icon_open.png"); /* Eller bruk et annet ikon */
+    background-size: cover;
+    padding-top: 30px;
+    font-family: "Prata", serif;
+    font-size: 28px;   /* juster etter størrelse */
+    font-weight: 600;
+    color: navy; /* kanskje gjøre tallene grå */
+    cursor: pointer;
+}
+
+#content, #result, .popup-content, .reward-modal p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    color: #2a1c12;
+    font-weight: 500;
+}
+
+.reward-modal h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.popup-content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.2); /* mørk bakgrunn */
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.popup-content img {
+    max-width: 80%;
+    max-height: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.popup-content {
+    position: relative;
+    background-color: #FFEFF4; /* beholder original rosa bakgrunn */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 80%;
+    max-width: 450px;
+    text-align: center;
+    z-index: 1000;
+    overflow: hidden; /* viktig! hindrer overlay i å renne ut */
+}
+
+/* 🔥 NYTT: Leopard-mønster overlay */
+.popup-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../Bilder/leo.jpg"); /* legg inn filen her */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.12; /* juster mellom 0.05–0.25 */
+    pointer-events: none; /* gjør at du fortsatt kan klikke knapper */
+    z-index: -1; /* legger mønsteret bak innholdet */
+}
+
+#optionsSection {
+    display: flex !important;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.option-btn {
+    padding: 12px 18px;
+    background: white;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid #d6b4d6;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.option-btn:hover {
+    background: #f5d7f5;
+    transform: scale(1.03);
+}
+
+#question {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.close-button {
+    color: black;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 95%;
+}
+
+.hello-kitty-space {
+  width: 50%;
+  margin: 0px auto 100px auto;
+  background-color: rgba(255, 192, 203, 0.6);
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+}
+
+.kitty-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+}
+
+.kitty-slot {
+  width: 60px;
+  height: 60px;
+  background-image: url("../Bilder/kitty-outline.png"); /* en kontur-versjon av figuren */
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  transition: opacity 0.5s ease-in-out, background-image 0.5s;
+}
+
+.kitty-slot.filled {
+  background-image: url("../Bilder/hello_kitty.png"); /* fullversjonen */
+  opacity: 1;
+}
+
+.kitty-slot.filled img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.milestone {
+  width: 4px;
+  height: 70px;
+  background-color: gold;
+  margin: 0 10px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.milestone::after {
+  content: "🎁";
+  position: absolute;
+  top: -25px;
+  left: -10px;
+  font-size: 20px;
+}
+
+/* ===== PUSLESPILL I RAMME ===== */
+.frame-wrapper {
+    position: absolute;
+    top: 180px;
+    left: 35px;
+    width: 290px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Bilder/ramme.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 11;
+    overflow: hidden; /* viktig */
+}
+
+/* Leopard bakgrunn bak puslespillet */
+.frame::before {
+    content: "";
+    position: absolute;
+    top: 25.8%;   /* matcher der grid starter */
+    left: 15%;
+    width: 69.5%; /* matcher bredde på grid */
+    height: 45.2%; /* matcher høyde på grid */
+
+    background-image: url("../Bilder/leo.jpg");
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.4; /* samme som popup */
+    z-index: 12;  /* ligger BAK grid, men OVER ramme */
+
+    pointer-events: none;
+}
+
+#puzzle-grid {
+    position: absolute;
+    top: 25.9%;
+    left: 15%;
+    width: 69%;
+    height: 45.2%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1px;
+
+    z-index: 20;
+
+    /* 🔥 NYTT: 3×3 grid bakgrunn */
+    background-image:
+linear-gradient(#ffffff 2px, transparent 1px),
+linear-gradient(90deg, #ffffff 2px, transparent 1px),
+linear-gradient(rgba(0,0,0,0.15) 1px, transparent 1px),
+linear-gradient(90deg, rgba(0,0,0,0.15) 1px, transparent 1px);
+    background-size: calc(100% / 3) calc(100% / 3);
+    background-position: 0 0;
+}
+
+.puzzle-piece {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 25;
+}
+
+.puzzle-piece.revealed {
+    opacity: 1;
+}
+
+/* Sett riktig bilde for hver av de 9 brikkene */
+#p1 { background-image: url("../Bilder/puzzle_piece_1.jpeg"); }
+#p2 { background-image: url("../Bilder/puzzle_piece_2.jpeg"); }
+#p3 { background-image: url("../Bilder/puzzle_piece_3.jpeg"); }
+
+#p4 { background-image: url("../Bilder/puzzle_piece_4.jpeg"); }
+#p5 { background-image: url("../Bilder/puzzle_piece_5.jpeg"); }
+#p6 { background-image: url("../Bilder/puzzle_piece_6.jpeg"); }
+
+#p7 { background-image: url("../Bilder/puzzle_piece_7.jpeg"); }
+#p8 { background-image: url("../Bilder/puzzle_piece_8.jpeg"); }
+#p9 { background-image: url("../Bilder/puzzle_piece_9.jpeg"); }
+
+.reward-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(6px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Modal */
+.reward-modal {
+    background: rgba(255,255,255,0.92);
+    padding: 40px 30px 30px 30px;
+    width: 90%;
+    max-width: 460px;
+    border-radius: 20px;
+    text-align: center;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+/* Når modal vises */
+.reward-modal.visible {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Gaveboksen */
+.gift-wrapper {
+    position: relative;
+    width: 140px;
+    margin: 0 auto 10px auto;
+    height: 120px;
+}
+
+/* Boks */
+.gift-box {
+    position: absolute;
+    width: 140px;
+    bottom: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Lokk */
+.gift-lid {
+    position: absolute;
+    width: 140px;
+    bottom: 90px;
+    opacity: 0;
+    transform-origin: bottom center;
+    transform: translateY(0) rotate(0);
+    transition: all 0.6s ease;
+    z-index: 2;
+}
+
+/* Premiebilde */
+.reward-image {
+    margin-left: 39%;
+    margin-top: 20px;
+    width: 110px;
+    max-height: 280px;
+}
+
+/* Close knapp */
+.reward-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+}
