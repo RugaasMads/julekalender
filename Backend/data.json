@@ -111,7 +111,7 @@
   {
     "day": 9,
     "content": {
-      "title": "Du er best",
+      "title": "9. Desember",
       "text": "Takk for at du gjør livet mitt bedre.",
       "image": "/images/day9.jpg"
     },
@@ -121,7 +121,7 @@
   {
     "day": 10,
     "content": {
-      "title": "En koselig beskjed",
+      "title": "10. Desember",
       "text": "Du fortjener alt det beste!",
       "image": "/images/day10.jpg"
     },
@@ -130,12 +130,13 @@
   },
   {
     "day": 11,
-    "question": "Spørsmål!!!!",
-    "answer": "31",
+    "question": "Hva er min favoritt kroppsdel på deg?",
+    "options": ["Pupper", "Rumpe", "Øynene"],
+    "correct_option": "Øynene",
     "content": {
-      "title": "Flott!",
-      "text": "Du har full kontroll på kalenderen.",
-      "image": "/images/day11.jpg"
+      "title": "11. Desember",
+      "text": "Puppene dine kommer selvfølgelig høyt her, men det er ingenting som slår de vakre blå øynene dine!",
+      "image": ""
     },
     "rewardKitty": true,
     "rewardPuzzle": null
@@ -143,7 +144,7 @@
   {
     "day": 12,
     "content": {
-      "title": "Halvveis til jul!",
+      "title": "12. Desember",
       "text": "Nå begynner virkelig stemningen.",
       "image": "/images/day12.jpg"
     },
@@ -153,7 +154,7 @@
   {
     "day": 13,
     "content": {
-      "title": "Luciadagen",
+      "title": "13. Desember",
       "text": "Håper du får lussekatter i dag!",
       "image": "/images/day13.jpg"
     },
@@ -162,32 +163,34 @@
   },
   {
     "day": 14,
-    "question": "Spørsmål!!!!",
-    "answer": "nissen",
+    "question": "Hvilken posisjon i Frozen var du i da du fanget oppmerksomheten min for første gang?",
+    "options": ["Dispatch", "Greater", "Unload"],
+    "correct_option": "Dispatch",
     "content": {
-      "title": "Riktig!",
-      "text": "Julenissen følger med!",
-      "image": "/images/day14.jpg"
-    },
-    "rewardKitty": false,
-    "rewardPuzzle": null
-  },
-  {
-    "day": 15,
-    "content": {
-      "title": "Bare deg",
-      "text": "Du gjør hver dag litt bedre.",
-      "image": "/images/day15.jpg"
+      "title": "14. Desember",
+      "text": "Det var ikke noe spørsmål i mine øyne om hvem som var den peneste i Frozen når du sto på Dispatch",
+      "image": ""
     },
     "rewardKitty": true,
     "rewardPuzzle": null
   },
   {
-    "day": 16,
-    "question": "Spørsmål!!!!",
-    "answer": "nissen",
+    "day": 15,
     "content": {
-      "title": "Koselig luke",
+      "title": "15. Desember",
+      "text": "Du gjør hver dag litt bedre.",
+      "image": "/images/day15.jpg"
+    },
+    "rewardKitty": true,
+    "rewardPuzzle": "p4"
+  },
+  {
+    "day": 16,
+    "question": "",
+    "options": ["", "", ""],
+    "correct_option": "",
+    "content": {
+      "title": "16. Desember",
       "text": "Ta deg en kopp kakao i dag!",
       "image": "/images/day16.jpg"
     },
@@ -197,51 +200,53 @@
   {
     "day": 17,
     "content": {
-      "title": "Nydelig sunget!",
+      "title": "17. Desember",
       "text": "Julestemning på topp!",
       "image": "/images/day17.jpeg"
     },
     "rewardKitty": true,
-    "rewardPuzzle": null
+    "rewardPuzzle": "p9"
   },
   {
     "day": 18,
-    "question": "Spørsmål!!!!",
-    "answer": "home alone",
+    "question": "",
+    "options": ["", "", ""],
+    "correct_option": "",
     "content": {
-      "title": "Nærmer seg!",
+      "title": "18. Desember",
       "text": "Bare noen dager igjen til jul!",
       "image": "/images/day18.jpg"
     },
     "rewardKitty": false,
-    "rewardPuzzle": "p9"
+    "rewardPuzzle": null
   },
   {
     "day": 19,
     "content": {
-      "title": "Juleglede",
+      "title": "19. Desember",
       "text": "Håper du får en rolig og god dag.",
       "image": "/images/day19.jpg"
     },
     "rewardKitty": true,
-    "rewardPuzzle": null
+    "rewardPuzzle": "p8"
   },
   {
     "day": 20,
     "content": {
-      "title": "Bare litt kos",
+      "title": "20. Desember",
       "text": "Tenk at vi snart er ved slutten av kalenderen!",
       "image": "/images/day20.jpg"
     },
     "rewardKitty": false,
-    "rewardPuzzle": null
+    "rewardPuzzle": "p2"
   },
   {
     "day": 21,
-    "question": "Spørsmål!!!!",
-    "answer": "home alone",
+    "question": "",
+    "options": ["", "", ""],
+    "correct_option": "",
     "content": {
-      "title": "Du er fantastisk",
+      "title": "21. Desember",
       "text": "Takk for at du er du.",
       "image": "/images/day21.jpg"
     },
@@ -251,7 +256,7 @@
   {
     "day": 22,
     "content": {
-      "title": "Riktig!",
+      "title": "22. Desember",
       "text": "En skikkelig juleklassiker.",
       "image": "/images/day22.jpg"
     },
@@ -260,11 +265,12 @@
   },
   {
     "day": 23,
-    "question": "Spørsmål!!!!",
-    "answer": "home alone",
+    "question": "",
+    "options": ["", "", ""],
+    "correct_option": "",
     "content": {
-      "title": "Snart jul!",
-      "text": "Bare én dag igjen til julaften!",
+      "title": "23. Desember",
+      "text": "Introduksjon til julegave...",
       "image": "/images/day23.jpg"
     },
     "rewardKitty": true,
@@ -274,7 +280,7 @@
     "day": 24,
     "content": {
       "title": "God jul!",
-      "text": "Takk for at du har vært med hele veien.",
+      "text": "Kort til julagave...",
       "image": "/images/day24.jpg"
     },
     "rewardKitty": true,

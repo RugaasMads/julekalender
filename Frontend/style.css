@@ -12,47 +12,6 @@ body {
     color: black;
 }
 
-/* Responsive adjustments for iPhone and iPad, portrait and landscape */
-@media (max-width: 900px) {
-    .calendar-grid {
-        grid-template-columns: repeat(4, 1fr);
-        max-width: 95vw;
-        padding: 10px;
-        grid-gap: 10px;
-    }
-    .calendar-box {
-        width: 70px;
-        height: 70px;
-        font-size: 22px;
-        padding-top: 10px;
-    }
-    h1 {
-        font-size: 1.5rem;
-        margin-top: 15px;
-    }
-}
-
-@media (max-width: 600px) {
-    .calendar-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 98vw;
-        padding: 5px;
-        grid-gap: 6px;
-    }
-    .calendar-box {
-        width: 48vw;
-        height: 48vw;
-        max-width: 120px;
-        max-height: 120px;
-        font-size: 18px;
-        padding-top: 6px;
-    }
-    h1 {
-        font-size: 1.1rem;
-        margin-top: 10px;
-    }
-}
-
 .title {
     text-align: center;
     color: #8b4513;
@@ -489,4 +448,18 @@ linear-gradient(90deg, rgba(0,0,0,0.15) 1px, transparent 1px);
     font-size: 22px;
     cursor: pointer;
     z-index: 10000;
+}
+
+/* iPad LANDSCAPE – SKALERING */
+@media only screen 
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #app-wrapper {
+        transform: scale(0.75);
+        transform-origin: top center;
+        width: 130%;
+    }
 }
