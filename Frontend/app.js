@@ -1,4 +1,4 @@
-const API_URL = "http://0.0.0.0:10000";
+const API_URL = "https://julekalender-p8do.onrender.com";
 const REWARD_MILESTONES = [3];
 
 let currentDay = null;

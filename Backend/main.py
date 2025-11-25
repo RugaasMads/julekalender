@@ -6,6 +6,10 @@ import json
 
 app = FastAPI()
 
+@app.get("/")
+def root():
+    return {"status": "ok", "message": "Julekalender API kjører 🎄"}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
