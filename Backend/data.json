@@ -13,10 +13,10 @@
         "rewardPopup": {
             "title": "Hello Kitty premie!",
             "subtitle": "I dag får du en Pumpkin Spice Latte på Espresso House til å holde varmen❤️",
-            "image": "../Bilder/latte.png",
+            "image": "Bilder/latte.png",
             "giftBox": {
-                "closed": "../Bilder/icon.png",
-                "open": "../Bilder/icon_open.png"
+                "closed": "Bilder/icon.png",
+                "open": "Bilder/icon_open.png"
         }
     }
   },
@@ -28,7 +28,7 @@
         "content": {
             "title": "2. Desember",
             "text": "Aquamarine av Addison Rae i bilen på vei til Kongsberg",
-            "image": "../Bilder/Luke1.jpeg"
+            "image": "Bilder/Luke1.jpeg"
         },
         "rewardKitty": true,
         "rewardPuzzle": null
@@ -38,7 +38,7 @@
         "content": {
             "title": "3. Desember",
             "text": "Din første brikke i puslespillet!",
-            "image": "../Bilder/puzzle_piece_1.jpeg"
+            "image": "Bilder/puzzle_piece_1.jpeg"
         },
         "rewardKitty": false,
         "rewardPuzzle": "p1"
@@ -58,7 +58,7 @@
         "content": {
             "title": "5. Desember",
             "text": "Her får du en brikke til, håper du får en fin dag!❤️",
-            "image": "../Bilder/puzzle_piece_7.jpeg"
+            "image": "Bilder/puzzle_piece_7.jpeg"
         },
         "rewardKitty": false,
         "rewardPuzzle": "p7"
@@ -71,7 +71,7 @@
         "content": {
             "title": "6. Desember",
             "text": "Panda Express etter en seig dag i Frozen",
-            "image": "../Bilder/Panda-Express.png"
+            "image": "Bilder/Panda-Express.png"
         },
         "rewardKitty": true,
         "rewardPuzzle": null
@@ -81,7 +81,7 @@
         "content": {
             "title": "7. Desember",
             "text": "Din første brikke i puslespillet!",
-            "image": "../Bilder/puzzle_piece_3.jpeg"
+            "image": "Bilder/puzzle_piece_3.jpeg"
         },
         "rewardKitty": false,
         "rewardPuzzle": "p3"
@@ -94,17 +94,17 @@
         "content": {
             "title": "8. Desember",
             "text": "Budweiser - helst på nach med deg!",
-            "image": "../Bilder/budweiser.jpeg"
+            "image": "Bilder/budweiser.jpeg"
         },
         "rewardKitty": true,
         "rewardPuzzle": null,
         "rewardPopup": {
             "title": "Du har samlet dine første Hello Kittys!",
             "subtitle": "Premien i dag er en flaske vin som står klar til deg på vinmonopolet! Det er en Amerikaner, og jeg tenkte at siden du ikke kan være her med meg i USA, så kan du i det minste få smaken av det❤️",
-            "image": "../Bilder/vin.png",
+            "image": "Bilder/vin.png",
             "giftBox": {
-                "closed": "../Bilder/icon.png",
-                "open": "../Bilder/icon_open.png"
+                "closed": "Bilder/icon.png",
+                "open": "Bilder/icon_open.png"
         }
     }
   },
