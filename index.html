@@ -76,9 +76,13 @@
 
 <!-- Overlay + popup -->
 <div id="overlay" class="overlay" onclick="closePopup()">
+    
+    <button id="close-button" class="close-button">&times;</button>
+    <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+
     <div class="popup-content" onclick="event.stopPropagation()">
 
-        <span class="close-button" onclick="closePopup()">&times;</span>
+        
 
         <!-- Spørsmål -->
         <p id="question"></p>

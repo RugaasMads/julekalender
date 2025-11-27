@@ -208,12 +208,17 @@ body {
 }
 
 .close-button {
-    color: black;
-    border: none; 
-    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
     cursor: pointer;
-    font-size: 20px;
-    margin-left: 95%;
+    z-index: 10000;
 }
 
 .hello-kitty-space {

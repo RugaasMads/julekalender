@@ -37,7 +37,7 @@
         "day": 3,
         "content": {
             "title": "3. Desember",
-            "text": "Din første brikke i puslespillet!",
+            "text": "I denne luken får du din første brikke i puslespillet!",
             "image": "Bilder/puzzle_piece_1.jpeg"
         },
         "rewardKitty": false,
@@ -80,7 +80,7 @@
         "day": 7,
         "content": {
             "title": "7. Desember",
-            "text": "Din første brikke i puslespillet!",
+            "text": "Tid for brikke nummer tre i puslespillet, ",
             "image": "Bilder/puzzle_piece_3.jpeg"
         },
         "rewardKitty": false,
@@ -195,7 +195,16 @@
       "image": "/images/day16.jpg"
     },
     "rewardKitty": false,
-    "rewardPuzzle": null
+    "rewardPuzzle": null,
+    "rewardPopup": {
+            "title": "Hello Kitty premie!",
+            "subtitle": "Dagens premie kommer som en overraskelse på døra i morgen tidlig, ikke spis frokosten før du har åpnet den❤️",
+            "image": "Bilder/morgenlevering.png",
+            "giftBox": {
+                "closed": "Bilder/icon.png",
+                "open": "Bilder/icon_open.png"
+        }
+    }
   },
   {
     "day": 17,
@@ -255,25 +264,34 @@
   },
   {
     "day": 22,
+    "question": "",
+    "options": ["", "", ""],
+    "correct_option": "",
     "content": {
       "title": "22. Desember",
       "text": "En skikkelig juleklassiker.",
       "image": "/images/day22.jpg"
     },
-    "rewardKitty": false,
-    "rewardPuzzle": null
+    "rewardKitty": true,
+    "rewardPuzzle": null,
+    "rewardPopup": {
+            "title": "Du har samlet dine siste Hello Kittys!",
+            "subtitle": "I dag venter det en blomsterbukett på deg hos Mester Grønn, jeg håper den kan bidra til litt ekstra julestemning hjemme❤️",
+            "image": "Bilder/mesterG.png",
+            "giftBox": {
+                "closed": "Bilder/icon.png",
+                "open": "Bilder/icon_open.png"
+        }
+    }
   },
   {
     "day": 23,
-    "question": "",
-    "options": ["", "", ""],
-    "correct_option": "",
     "content": {
       "title": "23. Desember",
       "text": "Introduksjon til julegave...",
       "image": "/images/day23.jpg"
     },
-    "rewardKitty": true,
+    "rewardKitty": false,
     "rewardPuzzle": null
   },
   {
