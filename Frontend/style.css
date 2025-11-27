@@ -110,18 +110,11 @@ body {
     font-size: 1.2rem;
     line-height: 1.65;
     color: #2a1c12;
-    font-weight: 500;
+    font-weight: 5  00;
 }
 
 .reward-modal h2 {
     font-family: "Cormorant Garamond", serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.popup-content h2 {
     font-size: 1.8rem;
     font-weight: 600;
     text-align: center;
@@ -141,15 +134,6 @@ body {
     display: none;
     align-items: center;
     justify-content: center;
-}
-.popup-content img {
-    max-width: 80%;
-    max-height: 400px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 6px;
-    object-fit: contain;
 }
 
 .popup-content {
@@ -176,6 +160,66 @@ body {
     opacity: 0.12; /* juster mellom 0.05–0.25 */
     pointer-events: none; /* gjør at du fortsatt kan klikke knapper */
     z-index: -1; /* legger mønsteret bak innholdet */
+}
+
+.popup-content h2,
+#question {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: #4b3020;
+    position: relative;
+    padding-bottom: 2px;      /* lite luft over linjen */
+    display: inline-block; 
+}
+
+.popup-content h2::after,
+#question::after {
+    content: "";
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    width: 120%;
+    height: 2px;
+    background: linear-gradient(90deg, #d4a373, #b8860b, #d4a373);
+    border-radius: 1px;
+    opacity: 0.85;
+}
+
+.popup-content img {
+    width: 88%;
+    max-height: 350px;
+    border-radius: 14px;
+    object-fit: cover;
+    margin-top: 15px;
+
+    /* Subtil gull-glow rundt bildet */
+    box-shadow:
+        0 0 0 4px rgba(255,255,255,0.7),
+        0 0 0 6px rgba(215,170,120,0.25),
+        0 10px 20px rgba(0,0,0,0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: rgba(255,255,255,0.8);
+    border: 1px solid rgba(212,163,115,0.4);
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    transition: 0.2s;
+}
+
+.close-button:hover {
+    background: white;
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
 }
 
 #optionsSection {
@@ -205,20 +249,6 @@ body {
     margin-top: 0px;
     margin-bottom: 15px;
     color: #333;
-}
-
-.close-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    cursor: pointer;
-    z-index: 10000;
 }
 
 .hello-kitty-space {
@@ -385,7 +415,7 @@ linear-gradient(90deg, rgba(0,0,0,0.15) 1px, transparent 1px);
 
 /* Modal */
 .reward-modal {
-    background: rgba(255,255,255,0.92);
+    background: #FFEFF4;
     padding: 40px 30px 30px 30px;
     width: 90%;
     max-width: 460px;
@@ -395,6 +425,18 @@ linear-gradient(90deg, rgba(0,0,0,0.15) 1px, transparent 1px);
     opacity: 0;
     transition: all 0.4s ease;
     position: relative;
+}
+
+.reward-modal::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../Bilder/leo.jpg"); /* legg inn filen her */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.12; /* juster mellom 0.05–0.25 */
+    pointer-events: none; /* gjør at du fortsatt kan klikke knapper */
+    z-index: -1; /* legger mønsteret bak innholdet */
 }
 
 /* Når modal vises */
@@ -438,21 +480,6 @@ linear-gradient(90deg, rgba(0,0,0,0.15) 1px, transparent 1px);
     margin-top: 20px;
     width: 110px;
     max-height: 280px;
-}
-
-/* Close knapp */
-.reward-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    cursor: pointer;
-    z-index: 10000;
 }
 
 /* iPad LANDSCAPE – SKALERING */

@@ -115,7 +115,7 @@
       "text": "Takk for at du gjør livet mitt bedre.",
       "image": "/images/day9.jpg"
     },
-    "rewardKitty": true,
+    "rewardKitty": false,
     "rewardPuzzle": null
   },
   {
@@ -123,7 +123,7 @@
     "content": {
       "title": "10. Desember",
       "text": "Du fortjener alt det beste!",
-      "image": "/images/day10.jpg"
+      "image": "Bilder/puzzle_piece_5.jpeg"
     },
     "rewardKitty": false,
     "rewardPuzzle": "p5"
@@ -146,7 +146,7 @@
     "content": {
       "title": "12. Desember",
       "text": "Nå begynner virkelig stemningen.",
-      "image": "/images/day12.jpg"
+      "image": "Bilder/puzzle_piece_6.jpeg"
     },
     "rewardKitty": false,
     "rewardPuzzle": "p6"
@@ -158,7 +158,7 @@
       "text": "Håper du får lussekatter i dag!",
       "image": "/images/day13.jpg"
     },
-    "rewardKitty": true,
+    "rewardKitty": false,
     "rewardPuzzle": null
   },
   {
@@ -179,9 +179,9 @@
     "content": {
       "title": "15. Desember",
       "text": "Du gjør hver dag litt bedre.",
-      "image": "/images/day15.jpg"
+      "image": "Bilder/puzzle_piece_4.jpeg"
     },
-    "rewardKitty": true,
+    "rewardKitty": false,
     "rewardPuzzle": "p4"
   },
   {
@@ -194,7 +194,7 @@
       "text": "Ta deg en kopp kakao i dag!",
       "image": "/images/day16.jpg"
     },
-    "rewardKitty": false,
+    "rewardKitty": true,
     "rewardPuzzle": null,
     "rewardPopup": {
             "title": "Hello Kitty premie!",
@@ -211,9 +211,9 @@
     "content": {
       "title": "17. Desember",
       "text": "Julestemning på topp!",
-      "image": "/images/day17.jpeg"
+      "image": "Bilder/puzzle_piece_9.jpeg"
     },
-    "rewardKitty": true,
+    "rewardKitty": false,
     "rewardPuzzle": "p9"
   },
   {
@@ -226,7 +226,7 @@
       "text": "Bare noen dager igjen til jul!",
       "image": "/images/day18.jpg"
     },
-    "rewardKitty": false,
+    "rewardKitty": true,
     "rewardPuzzle": null
   },
   {
@@ -234,33 +234,33 @@
     "content": {
       "title": "19. Desember",
       "text": "Håper du får en rolig og god dag.",
-      "image": "/images/day19.jpg"
+      "image": "Bilder/puzzle_piece_8.jpeg"
     },
-    "rewardKitty": true,
+    "rewardKitty": false,
     "rewardPuzzle": "p8"
   },
   {
     "day": 20,
+    "question": "",
+    "options": ["", "", ""],
+    "correct_option": "",
     "content": {
       "title": "20. Desember",
       "text": "Tenk at vi snart er ved slutten av kalenderen!",
       "image": "/images/day20.jpg"
     },
-    "rewardKitty": false,
-    "rewardPuzzle": "p2"
+    "rewardKitty": true,
+    "rewardPuzzle": null
   },
   {
     "day": 21,
-    "question": "",
-    "options": ["", "", ""],
-    "correct_option": "",
     "content": {
       "title": "21. Desember",
-      "text": "Takk for at du er du.",
-      "image": "/images/day21.jpg"
+      "text": "Siste brikke, klarte du å gjette det?",
+      "image": "Bilder/puzzle_piece_2.jpeg"
     },
-    "rewardKitty": true,
-    "rewardPuzzle": null
+    "rewardKitty": false,
+    "rewardPuzzle": "p2"
   },
   {
     "day": 22,
@@ -301,7 +301,7 @@
       "text": "Kort til julagave...",
       "image": "/images/day24.jpg"
     },
-    "rewardKitty": true,
+    "rewardKitty": false,
     "rewardPuzzle": null
   }
 ]
