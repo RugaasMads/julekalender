@@ -5,6 +5,54 @@ let currentDay = null;
 let currentDayData = null;
 let rewardPending = false;
 
+const LOGIN_EXPIRATION_HOURS = 12;  // hvor lenge hun skal være logget inn
+
+function hasValidLogin() {
+    const lastLogin = localStorage.getItem("lastLoginTime");
+    if (!lastLogin) return false;
+
+    const last = new Date(parseInt(lastLogin, 10));
+    const now = new Date();
+
+    const hoursPassed = (now - last) / (1000 * 60 * 60);
+    return hoursPassed < LOGIN_EXPIRATION_HOURS;
+}
+
+function checkPassword() {
+    const correctPassword = "Dinaerbest";
+    const input = document.getElementById("passwordInput").value;
+
+    if (input === correctPassword) {
+        localStorage.setItem("lastLoginTime", Date.now().toString());
+        document.getElementById("passwordScreen").style.display = "none";
+        runTitleAnimation();  
+    } else {
+        document.getElementById("pwError").textContent = "Feil passord.";
+    }
+}
+
+function runTitleAnimation() {
+    const title = document.querySelector(".title");
+    const text = title.innerText;
+    title.innerHTML = "";
+
+    text.split("").forEach((letter, i) => {
+        const span = document.createElement("span");
+        span.textContent = letter;
+        span.style.animationDelay = (i * 0.05) + "s";
+        title.appendChild(span);
+    });
+
+    title.classList.add("lux-type");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (hasValidLogin()) {
+        document.getElementById("passwordScreen").style.display = "none";
+        runTitleAnimation();
+    }
+});
+
 /* =====================================
    HELLO KITTY COLLECTION
 ===================================== */

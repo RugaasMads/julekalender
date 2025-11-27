@@ -35,7 +35,7 @@ def get_day(day_number: int):
     now = get_oslo_datetime()
 
     # 📌 Sjekk: Vi er ikke i desember → stopp
-    if now.month != 12:
+    if now.month != 11:
         raise HTTPException(
             status_code=403,
             detail="Kalenderen er kun aktiv i desember."
