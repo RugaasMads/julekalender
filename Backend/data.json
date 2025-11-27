@@ -145,7 +145,7 @@
     "day": 12,
     "content": {
       "title": "12. Desember",
-      "text": "Nå begynner virkelig stemningen.",
+      "text": "Halvveis til jul! Begynner du å gjette hva puslespillet forestiller?🤪",
       "image": "Bilder/puzzle_piece_6.jpeg"
     },
     "rewardKitty": false,
@@ -155,8 +155,8 @@
     "day": 13,
     "content": {
       "title": "13. Desember",
-      "text": "Håper du får lussekatter i dag!",
-      "image": "/images/day13.jpg"
+      "text": "Nå er det bare 26 dager igjen til du lander i Orladndo! Jeg gleder meg så utrolig mye til å se deg igjen, og til å kunne tilbringe tid sammen med deg her borte❤️",
+      "image": "Bilder/bunad.jpeg"
     },
     "rewardKitty": false,
     "rewardPuzzle": null
@@ -169,7 +169,7 @@
     "content": {
       "title": "14. Desember",
       "text": "Det var ikke noe spørsmål i mine øyne om hvem som var den peneste i Frozen når du sto på Dispatch",
-      "image": ""
+      "image": "Bilder/tower.jpeg"
     },
     "rewardKitty": true,
     "rewardPuzzle": null
@@ -178,7 +178,7 @@
     "day": 15,
     "content": {
       "title": "15. Desember",
-      "text": "Du gjør hver dag litt bedre.",
+      "text": "Du gjør hver dag litt bedre, her har du en brikke til❤️",
       "image": "Bilder/puzzle_piece_4.jpeg"
     },
     "rewardKitty": false,
