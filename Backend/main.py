@@ -2,7 +2,9 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 import json
+
 
 app = FastAPI()
 
@@ -20,6 +22,9 @@ app.add_middleware(
 
 DATA_PATH = Path("data.json")
 
+def get_oslo_datetime():
+    return datetime.now(ZoneInfo("Europe/Oslo"))
+
 def load_data():
     if not DATA_PATH.exists():
         raise HTTPException(status_code=500, detail="data.json mangler.")
@@ -27,9 +32,21 @@ def load_data():
 
 @app.get("/day/{day_number}")
 def get_day(day_number: int):
-    today = datetime.now().day
-    if day_number > today:
-        raise HTTPException(status_code=403, detail="For tidlig å åpne denne luken.")
+    now = get_oslo_datetime()
+
+    # 📌 Sjekk: Vi er ikke i desember → stopp
+    if now.month != 12:
+        raise HTTPException(
+            status_code=403,
+            detail="Kalenderen er kun aktiv i desember."
+        )
+
+    # 📌 Sjekk: Ikke åpne dager etter dagens dato
+    if day_number > now.day:
+        raise HTTPException(
+            status_code=403,
+            detail="For tidlig å åpne denne luken."
+        )
 
     data = load_data()
     item = next((x for x in data if x["day"] == day_number), None)
