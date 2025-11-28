@@ -1,8 +1,6 @@
 [
   {
         "day": 1,
-        "question": "",
-        "answer": "",
         "content": {
             "title": "1. Desember",
             "text": "Kjære Dina, velkommen til din julekalender! Jeg håper du vil like den jeg har laget for deg. Hver dag frem til julaften vil du få åpne en luke med ulikt innhold som jeg har laget spesielt for deg. Lykke til, og god jul!",
@@ -269,8 +267,8 @@
     "correct_option": "Dina",
     "content": {
       "title": "22. Desember",
-      "text": "En skikkelig juleklassiker.",
-      "image": "/images/day22.jpg"
+      "text": "Er jo bare en prinsesse i mitt liv, og det er selvfølgelig deg❤️",
+      "image": "Bilder/askepott.png"
     },
     "rewardKitty": true,
     "rewardPuzzle": null,
