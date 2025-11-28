@@ -80,7 +80,7 @@
         "day": 7,
         "content": {
             "title": "7. Desember",
-            "text": "Tid for brikke nummer tre i puslespillet, ",
+            "text": "Tid for brikke nummer tre i puslespillet, du er flink❤️",
             "image": "Bilder/puzzle_piece_3.jpeg"
         },
         "rewardKitty": false,
@@ -122,7 +122,7 @@
     "day": 10,
     "content": {
       "title": "10. Desember",
-      "text": "Du fortjener alt det beste!",
+      "text": "Du fortjener alt det beste, og her får du en brikke til❤️",
       "image": "Bilder/puzzle_piece_5.jpeg"
     },
     "rewardKitty": false,
@@ -155,7 +155,7 @@
     "day": 13,
     "content": {
       "title": "13. Desember",
-      "text": "Nå er det bare 26 dager igjen til du lander i Orladndo! Jeg gleder meg så utrolig mye til å se deg igjen, og til å kunne tilbringe tid sammen med deg her borte❤️",
+      "text": "Nå er det bare 26 dager igjen til du lander i Orlando! Jeg gleder meg så utrolig mye til å se deg igjen, og til å kunne tilbringe tid sammen med deg her borte❤️",
       "image": "Bilder/bunad.jpeg"
     },
     "rewardKitty": false,
@@ -210,7 +210,7 @@
     "day": 17,
     "content": {
       "title": "17. Desember",
-      "text": "Julestemning på topp!",
+      "text": "Brikke nr. 7 på plass, du er digg!❤️‍🔥",
       "image": "Bilder/puzzle_piece_9.jpeg"
     },
     "rewardKitty": false,
@@ -218,13 +218,13 @@
   },
   {
     "day": 18,
-    "question": "",
-    "options": ["", "", ""],
-    "correct_option": "",
+    "question": "Hvilken farge liker jeg å ha på ting som du ikke liker?",
+    "options": ["Grønn", "Brun", "Oransje"],
+    "correct_option": "Oransje",
     "content": {
       "title": "18. Desember",
-      "text": "Bare noen dager igjen til jul!",
-      "image": "/images/day18.jpg"
+      "text": "Det er jo selvfølgelig verdens kuleste farge, Oransje!",
+      "image": "Bilder/jakke.png"
     },
     "rewardKitty": true,
     "rewardPuzzle": null
@@ -233,7 +233,7 @@
     "day": 19,
     "content": {
       "title": "19. Desember",
-      "text": "Håper du får en rolig og god dag.",
+      "text": "Nå får du din nest siste brikke, håper du får en fin dag!",
       "image": "Bilder/puzzle_piece_8.jpeg"
     },
     "rewardKitty": false,
@@ -241,13 +241,13 @@
   },
   {
     "day": 20,
-    "question": "",
-    "options": ["", "", ""],
-    "correct_option": "",
+    "question": "Når har jeg bursdag?",
+    "options": ["26. Feb", "16. Feb", "12. Feb"],
+    "correct_option": "16. Feb",
     "content": {
       "title": "20. Desember",
-      "text": "Tenk at vi snart er ved slutten av kalenderen!",
-      "image": "/images/day20.jpg"
+      "text": "Denne håper jeg du tok på første forsøk, 16. Februar er riktig! Bilde fra fjorårets feiring, dagen jeg så deg for første gang❤️",
+      "image": "Bilder/bursdag.jpeg"
     },
     "rewardKitty": true,
     "rewardPuzzle": null
@@ -264,9 +264,9 @@
   },
   {
     "day": 22,
-    "question": "",
-    "options": ["", "", ""],
-    "correct_option": "",
+    "question": "Siste spørsmål - hvem er min Askepott?",
+    "options": ["Dina", "Dina", "Dina"],
+    "correct_option": "Dina",
     "content": {
       "title": "22. Desember",
       "text": "En skikkelig juleklassiker.",
@@ -288,8 +288,8 @@
     "day": 23,
     "content": {
       "title": "23. Desember",
-      "text": "Introduksjon til julegave...",
-      "image": "/images/day23.jpg"
+      "text": "Dagens luke inneholder litt info om morgendagens julegave. Jeg synes det ble litt i overkant kleint å få mamma til å skrive kort til julegaven din, så i morgen når du åpner gaven din kan du åpne den siste luken i kalenderen, der vil du få kortet ditt❤️ Han fin lille julaften! ",
+      "image": ""
     },
     "rewardKitty": false,
     "rewardPuzzle": null
@@ -299,7 +299,7 @@
     "content": {
       "title": "God jul!",
       "text": "Kort til julagave...",
-      "image": "/images/day24.jpg"
+      "image": ""
     },
     "rewardKitty": false,
     "rewardPuzzle": null
