@@ -398,11 +398,9 @@ function showReward(data) {
 
     overlay.style.display = "flex";
 
-    // Tekst
-    title.innerText = data.title || "Du har fått en premie!";
+    title.innerText = data.title || "Premie!";
     subtitle.innerText = data.subtitle || "";
-    
-    // Premiebilde
+
     if (data.image) {
         image.src = data.image;
         image.style.display = "block";
@@ -410,29 +408,28 @@ function showReward(data) {
         image.style.display = "none";
     }
 
-    // Endre gaveboks-design
     if (data.giftBox) {
         closed.src = data.giftBox.closed;
         open.src = data.giftBox.open;
     }
 
-    // Anim
-    modal.classList.remove("visible");
-    closed.style.opacity = "1";
-    open.style.opacity = "0";
-    open.style.transform = "translateY(0) rotate(0deg)";
+    closed.style.display = "none";
+    open.style.display = "block";
 
+    // SMOOTH FADE & ZOOM
+    modal.classList.remove("visible");
     setTimeout(() => {
         modal.classList.add("visible");
-    }, 50);
-
-    setTimeout(() => {
-        closed.style.opacity = "0";
-        open.style.opacity = "1";
-        open.style.transform = "translateY(-40px) rotate(-15deg)";
-    }, 500);
+    }, 10);
 }
 
 document.getElementById("rewardClose").onclick = () => {
     document.getElementById("reward-overlay").style.display = "none";
 };
+
+document.getElementById("reward-overlay").addEventListener("click", (e) => {
+    // Hindrer at klikk inne i modalen lukker den
+    if (e.target.id === "reward-overlay") {
+        document.getElementById("reward-overlay").style.display = "none";
+    }
+});

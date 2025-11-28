@@ -428,10 +428,16 @@ linear-gradient(90deg, rgba(0,0,0,0.15) 1px, transparent 1px);
     max-width: 460px;
     border-radius: 20px;
     text-align: center;
-    transform: scale(0.9);
-    opacity: 0;
-    transition: all 0.4s ease;
     position: relative;
+
+    /* SMOOTH ANIM START */
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.reward-modal.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .reward-modal::before {
@@ -446,39 +452,34 @@ linear-gradient(90deg, rgba(0,0,0,0.15) 1px, transparent 1px);
     z-index: -1; /* legger mønsteret bak innholdet */
 }
 
-/* Når modal vises */
-.reward-modal.visible {
-    transform: scale(1);
-    opacity: 1;
-}
-
 /* Gaveboksen */
 .gift-wrapper {
     position: relative;
-    width: 140px;
-    margin: 0 auto 10px auto;
-    height: 120px;
+    margin: 0 auto;
+    margin-top: -20px;   /* trekker litt oppover for estetikk */
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Boks */
 .gift-box {
-    position: absolute;
-    width: 140px;
-    bottom: 0;
-    z-index: 1;
-    transition: opacity 0.3s ease;
+    display: none; /* lukket boks */
 }
 
-/* Lokk */
 .gift-lid {
-    position: absolute;
-    width: 140px;
-    bottom: 90px;
-    opacity: 0;
-    transform-origin: bottom center;
-    transform: translateY(0) rotate(0);
-    transition: all 0.6s ease;
-    z-index: 2;
+    display: block;
+    width: 160px;     /* begrenser størrelsen */
+    height: auto;
+    margin: 0 auto;
+    opacity: 1;
+    transform: none;
+}
+
+.reward-title {
+    margin-top: 50px;   /* flytter tittelen ned under gaveboksen */
+    text-align: center;
 }
 
 /* Premiebilde */

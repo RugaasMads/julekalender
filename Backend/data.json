@@ -136,7 +136,7 @@
     "content": {
       "title": "11. Desember",
       "text": "Puppene dine kommer selvfølgelig høyt her, men det er ingenting som slår de vakre blå øynene dine!",
-      "image": ""
+      "image": "Bilder/øyne.jpeg"
     },
     "rewardKitty": true,
     "rewardPuzzle": null
@@ -186,13 +186,13 @@
   },
   {
     "day": 16,
-    "question": "",
-    "options": ["", "", ""],
-    "correct_option": "",
+    "question": "Hvilken aktivitet skulle jeg gjøre i Mexico, som du ønsker å forbinde med sex?",
+    "options": ["Fallskjerm", "Vannscooter", "Kajakk"],
+    "correct_option": "Vannscooter",
     "content": {
       "title": "16. Desember",
-      "text": "Ta deg en kopp kakao i dag!",
-      "image": "/images/day16.jpg"
+      "text": "Vannscooter er riktig svar, og jeg er klar for å ta deg med på tur😏",
+      "image": "Bilder/vannscooter.jpg"
     },
     "rewardKitty": true,
     "rewardPuzzle": null,
