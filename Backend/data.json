@@ -9,7 +9,7 @@
         "rewardKitty": false,
         "rewardPuzzle": null,
         "rewardPopup": {
-            "title": "Hello Kitty premie!",
+            "title": "Hello Kitty gave!",
             "subtitle": "Som en pangstart på kalenderen får du en Pumpkin Spice Latte på Espresso House for å holde varmen i den kalde desemberluften❤️ Håper den smaker!",
             "image": "Bilder/latte.png",
             "giftBox": {
@@ -98,7 +98,7 @@
         "rewardPuzzle": null,
         "rewardPopup": {
             "title": "Du har samlet dine første Hello Kittys!",
-            "subtitle": "Premien i dag er en flaske vin som står klar til deg på vinmonopolet! Det er en Amerikaner, og jeg tenkte at siden du ikke kan være her med meg i USA, så kan du i det minste få smaken av det❤️",
+            "subtitle": "Gaven i dag er en flaske vin som står klar til deg på vinmonopolet! Det er en Amerikaner, og jeg tenkte at siden du ikke kan være her med meg i USA, så kan du i det minste få smaken av det❤️",
             "image": "Bilder/vin.png",
             "giftBox": {
                 "closed": "Bilder/icon.png",
@@ -195,8 +195,8 @@
     "rewardKitty": true,
     "rewardPuzzle": null,
     "rewardPopup": {
-            "title": "Hello Kitty premie!",
-            "subtitle": "Dagens premie kommer som en overraskelse på døra i morgen tidlig, ikke spis frokost før du har åpnet den❤️",
+            "title": "Hello Kitty gave!",
+            "subtitle": "Dagens gave kommer som en overraskelse på døra i morgen tidlig, ikke spis frokost før du har åpnet den❤️",
             "image": "Bilder/morgenlevering.png",
             "giftBox": {
                 "closed": "Bilder/icon.png",
