@@ -409,6 +409,7 @@ linear-gradient(90deg, rgba(0,0,0,0.15) 1px, transparent 1px);
 #p8 { background-image: url("../Bilder/puzzle_piece_8.jpeg"); }
 #p9 { background-image: url("../Bilder/puzzle_piece_9.jpeg"); }
 
+/* Overlay */
 .reward-overlay {
     position: fixed;
     inset: 0;
@@ -420,86 +421,56 @@ linear-gradient(90deg, rgba(0,0,0,0.15) 1px, transparent 1px);
     z-index: 9999;
 }
 
-/* Modal */
-.reward-modal {
+/* Selve popupen */
+.reward-center {
     background: #FFEFF4;
-    padding: 40px 30px 30px 30px;
-    width: 90%;
-    max-width: 460px;
     border-radius: 20px;
+    padding: 30px;
+    width: 85%;
+    max-width: 450px;
     text-align: center;
     position: relative;
 
-    /* SMOOTH ANIM START */
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    color: #2a1c12;
+
+    /* fade-in animasjon */
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.92);
     transition: opacity 0.35s ease, transform 0.35s ease;
 }
-.reward-modal.visible {
+
+/* 🐆 Leopard-bakgrunn */
+.reward-center::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../Bilder/leo.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.18;
+    pointer-events: none;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.reward-center.visible {
     opacity: 1;
     transform: scale(1);
 }
 
-.reward-modal::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("../Bilder/leo.jpg"); /* legg inn filen her */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.12; /* juster mellom 0.05–0.25 */
-    pointer-events: none; /* gjør at du fortsatt kan klikke knapper */
-    z-index: -1; /* legger mønsteret bak innholdet */
+/* Kitty-bildet i toppen */
+.kitty-image {
+    width: 150px;
+    margin-left: -1%;
 }
 
-/* Gaveboksen */
-.gift-wrapper {
-    position: relative;
-    margin: 0 auto;
-    margin-top: -20px;   /* trekker litt oppover for estetikk */
-    width: 100px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.gift-box {
-    display: none; /* lukket boks */
-}
-
-.gift-lid {
-    display: block;
-    width: 160px;     /* begrenser størrelsen */
-    height: auto;
-    margin: 0 auto;
-    opacity: 1;
-    transform: none;
-}
-
-.reward-title {
-    margin-top: 50px;   /* flytter tittelen ned under gaveboksen */
-    text-align: center;
-}
-
-/* Premiebilde */
+/* Premiebildet */
 .reward-image {
-    margin-left: 39%;
-    margin-top: 20px;
-    width: 110px;
-    max-height: 280px;
+    width: 120px;
+    max-height: 300px;
+    margin-top: 10px;
+    margin-left: 1%;
 }
 
-/* iPad LANDSCAPE – SKALERING */
-@media only screen 
-  and (min-device-width: 1024px)
-  and (max-device-width: 1366px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-    #app-wrapper {
-        transform: scale(0.75);
-        transform-origin: top center;
-        width: 130%;
-    }
-}

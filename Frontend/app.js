@@ -387,49 +387,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function showReward(data) {
     const overlay = document.getElementById("reward-overlay");
-    const modal = document.querySelector(".reward-modal");
+    const center = document.querySelector(".reward-center");
 
-    const closed = document.getElementById("giftClosed");
-    const open = document.getElementById("giftOpen");
+    // Fyll inn innhold
+    center.querySelector(".reward-title").innerText = data.title;
+    center.querySelector(".reward-sub").innerText = data.subtitle;
+    center.querySelector(".reward-image").src = data.image;
 
-    const title = modal.querySelector(".reward-title");
-    const subtitle = modal.querySelector(".reward-sub");
-    const image = modal.querySelector(".reward-image");
-
+    // Vis overlay
     overlay.style.display = "flex";
 
-    title.innerText = data.title || "Premie!";
-    subtitle.innerText = data.subtitle || "";
-
-    if (data.image) {
-        image.src = data.image;
-        image.style.display = "block";
-    } else {
-        image.style.display = "none";
-    }
-
-    if (data.giftBox) {
-        closed.src = data.giftBox.closed;
-        open.src = data.giftBox.open;
-    }
-
-    closed.style.display = "none";
-    open.style.display = "block";
-
-    // SMOOTH FADE & ZOOM
-    modal.classList.remove("visible");
+    // Fade inn
     setTimeout(() => {
-        modal.classList.add("visible");
-    }, 10);
+        center.classList.add("visible");
+    }, 20);
 }
 
-document.getElementById("rewardClose").onclick = () => {
-    document.getElementById("reward-overlay").style.display = "none";
-};
+// ✨ Lukk med X-knapp
+document.getElementById("rewardClose").onclick = closeReward;
 
+// ✨ Lukk ved klikk på overlay
 document.getElementById("reward-overlay").addEventListener("click", (e) => {
-    // Hindrer at klikk inne i modalen lukker den
+    // Kun hvis man klikker direkte på overlay
     if (e.target.id === "reward-overlay") {
-        document.getElementById("reward-overlay").style.display = "none";
+        closeReward();
     }
 });
+
+// 🔥 Felles lukkefunksjon
+function closeReward() {
+    const overlay = document.getElementById("reward-overlay");
+    const center = document.querySelector(".reward-center");
+
+    center.classList.remove("visible");
+
+    setTimeout(() => {
+        overlay.style.display = "none";
+    }, 300);
+}
