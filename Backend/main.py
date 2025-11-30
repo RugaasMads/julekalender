@@ -5,39 +5,6 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 import json
 
-""" @app.get("/day/{day_number}")
-def get_day(day_number: int):
-    now = get_oslo_datetime()
-
-    month = now.month
-    day = now.day
-
-    # --- DATOLOGIKK ---
-
-    # Luke 1: åpnes 30 nov eller når som helst i desember
-    if day_number == 1:
-        if not ((month == 11 and day >= 30) or month == 12):
-            raise HTTPException(
-                status_code=403,
-                detail="For tidlig å åpne denne luken."
-            )
-    else:
-        # Alle andre luker: kun åpne riktig desember-dato
-        if month != 12 or day < day_number:
-            raise HTTPException(
-                status_code=403,
-                detail="For tidlig å åpne denne luken."
-            )
-
-    # --- LAST DAGENS DATA ---
-    data = load_data()
-    item = next((x for x in data if x["day"] == day_number), None)
-
-    if not item:
-        raise HTTPException(status_code=404, detail="Fant ikke innhold.")
-
-    return item """
-
 app = FastAPI()
 
 @app.get("/")
@@ -66,20 +33,27 @@ def load_data():
 def get_day(day_number: int):
     now = get_oslo_datetime()
 
-    # 📌 Sjekk: Vi er ikke i desember → stopp
-    if now.month != 11:
-        raise HTTPException(
-            status_code=403,
-            detail="Kalenderen er kun aktiv i desember."
-        )
+    month = now.month
+    day = now.day
 
-    # 📌 Sjekk: Ikke åpne dager etter dagens dato
-    if day_number > now.day:
-        raise HTTPException(
-            status_code=403,
-            detail="For tidlig å åpne denne luken."
-        )
+    # --- DATOLOGIKK ---
 
+    # Luke 1: åpnes 30 nov eller når som helst i desember
+    if day_number == 1:
+        if not ((month == 11 and day >= 29) or month == 12):
+            raise HTTPException(
+                status_code=403,
+                detail="For tidlig å åpne denne luken."
+            )
+    else:
+        # Alle andre luker: kun åpne riktig desember-dato
+        if month != 12 or day < day_number:
+            raise HTTPException(
+                status_code=403,
+                detail="For tidlig å åpne denne luken."
+            )
+
+    # --- LAST DAGENS DATA ---
     data = load_data()
     item = next((x for x in data if x["day"] == day_number), None)
 
