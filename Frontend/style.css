@@ -252,7 +252,7 @@ body {
 }
 
 .hello-kitty-space {
-  width: 50%;
+  width: 47%;
   margin: 0px auto 100px auto;
   background-color: rgba(255, 192, 203, 0.6);
   border-radius: 15px;
@@ -270,8 +270,8 @@ body {
 }
 
 .kitty-slot {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   background-image: url("../Bilder/kitty-outline.png"); /* en kontur-versjon av figuren */
   background-size: cover;
   background-repeat: no-repeat;
