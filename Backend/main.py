@@ -40,7 +40,7 @@ def get_day(day_number: int):
 
     # Luke 1: åpnes 30 nov eller når som helst i desember
     if day_number == 1:
-        if not ((month == 11 and day >= 29) or month == 12):
+        if not ((month == 11 and day >= 30) or month == 12):
             raise HTTPException(
                 status_code=403,
                 detail="For tidlig å åpne denne luken."
