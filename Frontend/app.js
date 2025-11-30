@@ -344,47 +344,21 @@ if (rewardPending) {
 ===================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
-    const boxes = document.querySelectorAll(".calendar-box");
+  const boxes = document.querySelectorAll(".calendar-box");
 
-    boxes.forEach((box, i) => {
-        const day = i + 1;
-        box.textContent = day;
+  boxes.forEach((box, i) => {
+    const day = i + 1;
+    box.textContent = day;
 
-        // beholder original klikk — API håndterer "for tidlig"
-        box.addEventListener("click", () => openPopup(day));
+    if (localStorage.getItem(`luke_${day}_opened`) === "true") {
+      box.classList.add("opened");
+    }
 
-        if (localStorage.getItem(`luke_${day}_opened`) === "true") {
-            box.classList.add("opened");
-        }
-    });
+    box.addEventListener("click", () => openPopup(day));
+  });
 
-    updateKittyCollection();
-    restorePuzzlePieces();
-
-    const today = new Date();
-    const month = today.getMonth() + 1; // 0 = jan
-    const date = today.getDate();
-
-    boxes.forEach((box, i) => {
-        const day = i + 1;
-
-        // ➤ Luke 1: tilgjengelig 30. nov + 1. des
-        if (day === 1) {
-            const allowed =
-                (month === 11 && date === 30) ||  // 30. november
-                (month === 12 && date >= 1);      // 1. desember og senere
-
-            if (!allowed) {
-                box.classList.add("locked");
-            }
-            return;
-        }
-
-        // ➤ Vanlige luker – låste før riktig dato
-        if (month === 12 && day > date) {
-            box.classList.add("locked");
-        }
-    });
+  updateKittyCollection();
+  restorePuzzlePieces();
 });
 
 function animateTitle(selector) {
