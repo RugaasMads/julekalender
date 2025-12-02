@@ -110,16 +110,6 @@
     "day": 9,
     "content": {
       "title": "9. Desember",
-      "text": "I dag tenkte jeg at vi kunne prøve å se en julefilm sammen, kanskje det kan bli en juletradisjon(?). Jeg har tre alternativer, også må du gjerne komme med innskytelser om du kommer på noen alternativer igjennom dagen. Her er mine:",
-      "image": "Bilder/filmer.png"
-    },
-    "rewardKitty": false,
-    "rewardPuzzle": null
-  },
-  {
-    "day": 10,
-    "content": {
-      "title": "10. Desember",
       "text": "Du fortjener alt det beste, og her får du en brikke til❤️",
       "image": "Bilder/puzzle_piece_5.jpeg"
     },
@@ -127,12 +117,12 @@
     "rewardPuzzle": "p5"
   },
   {
-    "day": 11,
+    "day": 10,
     "question": "Hva er min favoritt kroppsdel på deg?",
     "options": ["Pupper", "Rumpe", "Øynene"],
     "correct_option": "Øynene",
     "content": {
-      "title": "11. Desember",
+      "title": "10. Desember",
       "text": "Puppene dine kommer selvfølgelig høyt her, men det er ingenting som slår de vakre blå øynene dine!",
       "image": "Bilder/øyne.jpeg"
     },
@@ -140,32 +130,22 @@
     "rewardPuzzle": null
   },
   {
-    "day": 12,
+    "day": 11,
     "content": {
-      "title": "12. Desember",
-      "text": "Halvveis til jul! Begynner du å gjette hva puslespillet forestiller?🤪",
+      "title": "11. Desember",
+      "text": "Nesten halvveis til jul! Begynner du å gjette hva puslespillet forestiller?🤪",
       "image": "Bilder/puzzle_piece_8.jpeg"
     },
     "rewardKitty": false,
     "rewardPuzzle": "p8"
   },
   {
-    "day": 13,
-    "content": {
-      "title": "13. Desember",
-      "text": "Nå er det bare 26 dager igjen til du lander i Orlando! Jeg gleder meg så utrolig mye til å se deg igjen, og til å kunne tilbringe tid sammen med deg her borte❤️",
-      "image": "Bilder/bunad.jpeg"
-    },
-    "rewardKitty": false,
-    "rewardPuzzle": null
-  },
-  {
-    "day": 14,
+    "day": 12,
     "question": "Hvilken posisjon i Frozen var du i da du fanget oppmerksomheten min for første gang?",
     "options": ["Dispatch", "Greater", "Unload"],
     "correct_option": "Dispatch",
     "content": {
-      "title": "14. Desember",
+      "title": "12. Desember",
       "text": "Det var ikke noe spørsmål i mine øyne om hvem som var den peneste i Frozen når du sto på Dispatch. Det nærmeste bilde jeg kom var tower, men det får ihvertfall frem skjønnheten din❤️",
       "image": "Bilder/tower.jpeg"
     },
@@ -173,9 +153,9 @@
     "rewardPuzzle": null
   },
   {
-    "day": 15,
+    "day": 13,
     "content": {
-      "title": "15. Desember",
+      "title": "13. Desember",
       "text": "Du gjør hver dag litt bedre, her har du en brikke til❤️",
       "image": "Bilder/puzzle_piece_4.jpeg"
     },
@@ -183,12 +163,22 @@
     "rewardPuzzle": "p4"
   },
   {
-    "day": 16,
+    "day": 14,
+    "content": {
+      "title": "14. Desember",
+      "text": "Nå er det bare 25 dager igjen til du lander i Orlando! Jeg gleder meg så utrolig mye til å se deg igjen, og til å kunne tilbringe tid sammen med deg her borte❤️",
+      "image": "Bilder/bunad.jpeg"
+    },
+    "rewardKitty": false,
+    "rewardPuzzle": null
+  },
+  {
+    "day": 15,
     "question": "Hvilken aktivitet skulle jeg gjøre i Mexico, som du ønsker å forbinde med sex?",
     "options": ["Fallskjerm", "Vannscooter", "Kajakk"],
     "correct_option": "Vannscooter",
     "content": {
-      "title": "16. Desember",
+      "title": "15. Desember",
       "text": "Vannscooter er riktig svar, og jeg er klar for å ta deg med på tur😏",
       "image": "Bilder/vannscooter.jpg"
     },
@@ -203,6 +193,16 @@
                 "open": "Bilder/icon_open.png"
         }
     }
+  },
+  {
+    "day": 16,
+    "content": {
+      "title": "16. Desember",
+      "text": "I dag tenkte jeg at vi kunne prøve å se en julefilm sammen, kanskje det kan bli en juletradisjon(?). Jeg har tre alternativer, også må du gjerne komme med innskytelser om du kommer på noen alternativer igjennom dagen. Her er mine:",
+      "image": "Bilder/filmer.png"
+    },
+    "rewardKitty": false,
+    "rewardPuzzle": null
   },
   {
     "day": 17,
