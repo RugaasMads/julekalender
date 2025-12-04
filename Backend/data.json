@@ -198,21 +198,21 @@
     "day": 16,
     "content": {
       "title": "16. Desember",
-      "text": "I dag tenkte jeg at vi kunne prøve å se en julefilm sammen, kanskje det kan bli en juletradisjon(?). Jeg har tre alternativer, også må du gjerne komme med innskytelser om du kommer på noen alternativer igjennom dagen. Her er mine:",
-      "image": "Bilder/filmer.png"
-    },
-    "rewardKitty": false,
-    "rewardPuzzle": null
-  },
-  {
-    "day": 17,
-    "content": {
-      "title": "17. Desember",
       "text": "Brikke nr. 7 på plass, du er digg!❤️‍🔥",
       "image": "Bilder/puzzle_piece_9.jpeg"
     },
     "rewardKitty": false,
     "rewardPuzzle": "p9"
+  },
+  {
+    "day": 17,
+    "content": {
+      "title": "17. Desember",
+      "text": "I dag tenkte jeg at vi kunne prøve å se en julefilm sammen, kanskje det kan bli en juletradisjon(?). Jeg har tre alternativer, også må du gjerne komme med innskytelser om du kommer på noen alternativer igjennom dagen. Her er mine:",
+      "image": "Bilder/filmer.png"
+    },
+    "rewardKitty": false,
+    "rewardPuzzle": null
   },
   {
     "day": 18,
